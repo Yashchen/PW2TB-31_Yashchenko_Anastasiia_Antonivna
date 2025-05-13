@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор валових викидів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор валових викидів твердих частинок</h1>
+
+        <label for="coal">Донецьке газове вугілля (т):</label>
+        <input type="number" id="coal" placeholder="Введіть масу вугілля" step="any">
+
+        <label for="mazut">Мазут марки 40 (т):</label>
+        <input type="number" id="mazut" placeholder="Введіть масу мазуту" step="any">
+
+        <label for="gas">Природний газ (тис. м³):</label>
+        <input type="number" id="gas" placeholder="Введіть обʼєм газу" step="any">
+
+        <button onclick="calculateEmissions()">Розрахувати</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
